@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Station</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {
+            margin-left: 120px
+        }
+
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+
+        footer a {
+            padding-right: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="w3-black">
+    {% load static %}
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+        <a href="/" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class=""></i>
+            <img src="{% static 'weather/logo.png' %}" style="width:100%">
+            <p>WEATHER</p>
+            <hr>
+        </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+
+        <div class="w3-padding-64 w3-content" id="photos">
+            <h2 class="w3-text-light-grey">Wheather Station</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half" style="text-align: justify;">
+                    <p>
+                    <h3 style="color: rgb(51, 255, 0);">Message forwarded Successfully...</h3>
+                    Thank you for your precious time. We will check your message soon. And we will try to complete all of your requests.
+                    </p>
+                </div>
+
+                <div class="w3-half">
+
+                    <p id="demo" style="color: white; text-align: justify;">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Temporibus iure blanditiis rerum rem dolore dolorum, porro architecto?
+                        Mollitia atque eum quos suscipit consequuntur. Eaque illo illum nemo quo, libero architecto
+                        fugit expedita nulla quam dicta porro similique?</p>
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://www.facebook.com/profile.php?id=100009444696591">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            </a>
+            <a href="https://www.instagram.com/ahm_raz_789/">
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+            </a>
+
+            <a href="https://www.pinterest.com/afraheemraz/">
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/m-ifraheem-597729268/">
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </a>
+            <p class="w3-medium">Developed by Ahm Raz</p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>
